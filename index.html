@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Library-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Weather Api</title>
+    <script async src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!--Card-->
+    <section role="main" class="card">
+      <!--Item-Today-->
+      <div class="card-cont-time">
+        <div class="card__cont-clock-day">
+          <h1 class="card__time-clock"></h1>
+          <h2 class="card__time-day"></h2>
+        </div>
+
+        <div class="card__today"></div>
+      </div>
+      <!--Items-Next-Days-->
+      <section class="card__days">
+        <ul class="card-cont-items"></ul>
+      </section>
+    </section>
+    <!--Template-For-[Next-Days]-->
+    <template>
+      <li class="card__item">
+        <h3 class="card__date"></h3>
+        <label>
+          <span class="card__temp-max"> °</span>
+          <span class="card__temp-min"> °</span>
+        </label>
+        <h2 class="card__descrip"></h2>
+      </li>
+    </template>
+  </body>
+</html>

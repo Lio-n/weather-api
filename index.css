@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    107.17deg,
+    #408195 29.35%,
+    rgba(0, 210, 135, 0.8) 78.73%
+  );
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* <!--Card--> */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.card-cont-time {
+  padding: 1rem;
+  border: solid 2px aqua;
+}
+@media (min-width: 790px) {
+  .card-cont-time {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.card-cont-items {
+  border: solid 2px rgb(0, 255, 0);
+  padding: 1rem 1rem 0 1rem;
+}
+@media (min-width: 790px) {
+  .card-cont-items {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.card-cont-today {
+  border: solid 2px rgb(0, 255, 0);
+  padding: 1rem 1rem 0 1rem;
+  list-style-type: none;
+}
+.card-cont-today > li {
+  border: solid 2px gold;
+  margin-bottom: 1rem;
+}
+.card__cont-clock-day {
+  font-size: 3rem;
+  text-align: center;
+}
+.card__time-day {
+  font-size: 2.5rem;
+}
+.card__item {
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.card__date {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.card__temp-max {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.card__temp-max,
+.card__temp-min {
+  display: block;
+}
+
+.card__time {
+  border: royalblue solid 2px;
+}
+.card__today {
+  border: blueviolet solid 2px;
+}
+
+.card__probability {
+  text-align: center;
+  height: 100px;
+}
+.card__probability {
+  font-size: 3rem;
+}
